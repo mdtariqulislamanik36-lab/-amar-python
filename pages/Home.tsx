@@ -8,15 +8,15 @@ const Home: React.FC = () => {
 
   return (
     <div className="relative -mt-8 pt-8 overflow-hidden">
-      {/* Dynamic Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
+      {/* Dynamic Background Elements - Optimized with GPU acceleration */}
+      <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden" style={{ transform: 'translateZ(0)' }}>
         <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-blue-100/50 dark:bg-blue-900/20 rounded-full blur-[120px] animate-float"></div>
         <div className="absolute top-[20%] -right-[5%] w-[30%] h-[30%] bg-indigo-100/50 dark:bg-indigo-900/20 rounded-full blur-[100px] animate-float-delayed"></div>
         <div className="absolute bottom-[10%] left-[20%] w-[25%] h-[25%] bg-teal-50/50 dark:bg-teal-900/10 rounded-full blur-[80px] animate-float"></div>
       </div>
 
       <div className="space-y-24 relative">
-        <section className="text-center py-16 md:py-28 animate-in fade-in slide-in-from-top-4 duration-1000">
+        <section className="text-center py-16 md:py-28 animate-in fade-in slide-in-from-top-4 duration-1000 fill-mode-both">
           <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-300 text-sm font-semibold tracking-wide uppercase">
             Start your journey today
           </div>
